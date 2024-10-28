@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import List from "../list";
+import List from "../css/list";
 
 export default function Home(){
     const [lista, setLista] = useState([])
