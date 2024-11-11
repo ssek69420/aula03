@@ -5,19 +5,27 @@ export default function List({ lista }) {
     <>
       <ul>
     <div className={styles.home}>
-        <h1>Lista de Produtos</h1>
+        <h1 className={styles.listproductstitle}>Lista de Produtos</h1>
     {lista.map((produto) => (
             <li key={produto.id}>
-              <div className="card-container">
-                <div className="card">
-                  <div className="title">
+              <div className={styles.cardcontainer}>
+
+                <div className={styles.card}>
+
+                  <div className={styles.imagething}>
+
+                    <img src={produto.image} alt={produto.title} width={100} />
+                  
+                  </div>
+
+                  <div className={styles.title}>
                     <h2>{produto.title}</h2>
                   </div>
+
                   <p>{produto.description}</p>
+
                   <p>Preço: R${produto.price}</p>
-                  <div className="image-thing">
-                    <img src={produto.image} alt={produto.title} width={100} />
-                  </div>
+
                 </div>
               </div>
             </li>

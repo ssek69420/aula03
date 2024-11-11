@@ -1,16 +1,24 @@
-body{
-    flex-direction: column;
-}
-
 .home{
-    background-color: red;
+    background-color: blue;
+    list-style-type: none;
 }
 
-.home .card-container{
-    display: flex;
+.listproductstitle{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.home .card{
+.cardcontainer{
+    display: flexbox;
+    flex-wrap: wrap;
     color: white;
-    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+.card{
+    border: 20px black solid;
+}
+
+.imagething{
+    text-align: center;
 }
