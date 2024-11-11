@@ -1,16 +1,21 @@
+body{
+    flex-direction: column;
+}
+
 .home{
     background-color: blue;
     list-style-type: none;
 }
 
 .listproductstitle{
-    text-align: center;
+    text-align: center !important;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .cardcontainer{
-    display: flexbox;
+    display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     color: white;
     text-align: center;
 }
